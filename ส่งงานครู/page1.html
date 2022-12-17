@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occupation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <style>
+        /* start Navigation Bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            justify-self: center;
+            background-color: rgb(61, 61, 61);
+        }
+        span {
+            display: block;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+            float: left;
+            font-size: large;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+            float: right;
+        }
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        /* end-Navigation Bar */
+
+        /*start header*/
+        header{
+            font-weight: bold;
+            text-align: center;
+        }
+        .title{
+            margin-top: -50px;
+            line-height: 100px;
+            font-size: 100px;
+            text-shadow: 2px 2px 10px rgb(34, 34, 34);
+            font-family: arial,'sans-serif';
+        }
+        .passage{
+            margin-top: -75px;
+            font-size: 25px;
+            text-shadow: 3px 2px 7px black;
+            font-family: arial;
+        }
+        /*end header*/
+
+        /* start-content 1*/
+        .flip-card1{
+            background-color: transparent;
+            width: 300px;
+            height: 600px;
+            perspective: 1000px;
+            margin-top: 25px;
+            margin-left: 25px;
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flip-card1:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+
+          .flip-card-back1 h1{
+            text-align: center;
+          }
+
+          .flip-card-back1 p{
+            padding-left: 50px;
+          }
+
+          .flip-card-back1 img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flip-card-back1 {
+            background-color: #d32323;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: rotateY(180deg);
+          }
+        /* end-content 1*/
+
+        /* start-content 2*/
+        .flip-card2{
+            background-color: transparent;
+            width: 300px;
+            height: 600px;
+            perspective: 1000px;
+            margin-top: -600px;
+            margin-left: 400px;
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flip-card2:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+
+          .flip-card-back2 h1{
+            text-align: center;
+          }
+
+          .flip-card-back2 p{
+            padding-left: 50px;
+          }
+
+          .flip-card-back2 img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flip-card-back2 {
+            background-color: #dbba00;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: rotateY(180deg);
+          }
+        /* end-content 2*/
+
+        /* start-content 3*/
+        .flip-card3{
+            background-color: transparent;
+            width: 300px;
+            height: 600px;
+            perspective: 1000px;
+            margin-top: -600px;
+            margin-left: 775px;
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flip-card3:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+
+          .flip-card-back3 h1{
+            text-align: center;
+          }
+
+          .flip-card-back3 p{
+            padding-left: 50px;
+          }
+
+          .flip-card-back3 img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flip-card-back3 {
+            background-color: rgb(43, 43, 43);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: rotateY(180deg);
+          }
+        /* end-content 3*/
+
+        /* start-content 4*/
+        .flip-card4{
+            background-color: transparent;
+            width: 300px;
+            height: 600px;
+            perspective: 1000px;
+            margin-top: -600px;
+            margin-left: 1150px;
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flip-card4:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+
+          .flip-card-back4 h1{
+            text-align: center;
+          }
+
+          .flip-card-back4 p{
+            padding-left: 50px;
+          }
+
+          .flip-card-back4 img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flip-card-back4 {
+            background-color: brown;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: rotateY(180deg);
+          }
+        /* end-content 4*/
+
+        /* start-content 5*/
+        .flip-card5{
+            background-color: transparent;
+            width: 300px;
+            height: 600px;
+            perspective: 1000px;
+            margin-top: -600px;
+            margin-left: 1525px;
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flip-card5:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back5 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+
+          .flip-card-back5 h1{
+            text-align: center;
+          }
+
+          .flip-card-back5 p{
+            padding-left: 50px;
+          }
+
+          .flip-card-back5 img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flip-card-back5 {
+            background-color: rgb(209, 105, 122);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: rotateY(180deg);
+          }
+        /* end-content 5*/
+
+        .footer {
+            background-color: rgb(29, 29, 29);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        /*background*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            justify-content: center;
+            background: purple;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        p {
+            font-family: 'Kanit', sans-serif;
+        }
+        h1 {
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="bar">
+        <ul>
+          <span style="color: white;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BGMBBC</b></span>
+          <li><a href="About Us.html" target="_self">About Us</a></li>
+          <li><a href="https://www.finnomena.com/coinman/blockchain/" target="_blank">Blockchain คือ</a></li>
+          <li><a href="news.asp" target="_self">Patch</a></li>
+          <li><a href="index main.html" target="_self">Home</a></li>
+        </ul>
+    </div>
+    <!--/Navigation Bar-->
+
+    <!--header-->
+    <header>
+        <div class="title">
+          <p>
+            <b style="color: rgb(123, 255, 123); font-family: 'ZCOOL QingKe HuangYou', cursive;">OCCUPATION</b><br>
+          </p>
+        </div>
+        <div class="passage">
+          <p style="color: rgb(255, 255, 255);">
+            ตอนเเรกทุกคนจะได้อาวุธประจำตัว คือ ดาบ<br>
+            สามารถเลือกอาชีพได้ 5 ประเภท ดังต่อไปนี้
+            <br>
+            <br>
+          </p>
+        </div>
+    </header>
+    <!--/header-->
+
+    <!--start-title and content-->
+    <div class="flip-card1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://cdn.discordapp.com/attachments/925775435734876260/943507029224476682/Untitled33_20220216205118.png" alt="Avatar" style="width:300px;height:auto;">
+          </div>
+            <div class="flip-card-back1">
+                <h1>HUNTER</h1>
+                <p>
+                    - ตี Monster เเรงขึ้นตามอาวุธ
+                <br>- เพิ่มอัตรา Drop ของเเรร์ 1%
+                <br>
+                <br><b>item ประจำตัว : </b>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- คันธนูพร้อมลูกธนู
+                </p>
+                <img src="https://media.discordapp.net/attachments/925775435734876260/946060510921625620/23-2-25652.png?width=492&height=493" alt="" align="center" style="width:250px;height:250px;">
+            </div>
+        </div>
+    </div>
+    <div class="flip-card2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://cdn.discordapp.com/attachments/925775435734876260/943508574523502632/Untitled34_20220216210546.png" alt="Avatar" style="width:300px;height:auto;">
+          </div>
+            <div class="flip-card-back2">
+                <h1>PRIEST</h1>
+                <p style="font-family: 'Kanit', sans-serif;">
+                    - ฮีลเพื่อนได้
+                <br>- มีช่องเก็บของมากขึ้น
+                <br>
+                <br><b>skill ประจำตัว :</b>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Magic Power พลังเวท
+                </p>
+                <img src="https://cdn.discordapp.com/attachments/925775435734876260/946068725281488906/23-2-25653.png" alt="" align="center" style="width:250px;height:250px;">
+            </div>
+        </div>
+    </div>
+    <div class="flip-card3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://cdn.discordapp.com/attachments/925775435734876260/943507029455151184/Untitled34_20220216205925.png" alt="Avatar" style="width:300px;height:auto;">
+          </div>
+            <div class="flip-card-back3">
+                <h1>MINER</h1>
+                <p>
+                    - ขุดหินเเร่เร็ว
+                <br>- ได้รับโบนัสการขุดเเร่หิน0.2%
+                <br>
+                <br><b>item ประจำตัว :</b>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Shovel พลั่ว
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Pickaxe อีเตอร์
+                </p>
+                <img src="https://cdn.discordapp.com/attachments/925775435734876260/946053359176122368/23-2-2565ShovelPickaxe2.png" align="center" style="width:250px;height:250px;">
+            </div>
+        </div>
+    </div>
+    <div class="flip-card4">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://cdn.discordapp.com/attachments/925775435734876260/944914462157176842/Untitled35_20220220175852.png" alt="Avatar" style="width:300px;height:auto;">
+          </div>
+            <div class="flip-card-back4">
+                <h1>LUMBERJACK</h1>
+                <p>
+                    - ตัดไม้เร็วขึ้น ตามอาวุธ
+                <br>- ได้รับโบนัสการตัดไม้ 0.2%
+                <br>
+                <br><b>item ประจำตัว :</b>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Axe ขวาน
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Chainsaw เลื่อยไฟฟ้า
+                </p>
+                <img src="https://media.discordapp.net/attachments/925775435734876260/946050881974050887/23-2-2565ChainsawAxe2.png?width=493&height=493" alt="" align="center" style="width:250px;height:250px;">
+            </div>
+        </div>
+    </div>
+    <div class="flip-card5">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://cdn.discordapp.com/attachments/925775435734876260/944914462413045810/Untitled37_20220220181210.png" alt="Avatar" style="width:300px;height:auto;">
+          </div>
+            <div class="flip-card-back5">
+                <h1>RAISE ANIMAL</h1>
+                <p>
+                    - โบนัสเพิ่มสัตว์ ตามการเลี้ยงดู <br>
+                    - ผลผลิตจากสัตว์ ตามจำนวน
+                <br>
+                <br><b>item ประจำตัว :</b>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Animal Food อาหารสัตว์
+                </p>
+                <img src="https://cdn.discordapp.com/attachments/925775435734876260/946075086560038972/23-2-2565food2.png" alt="" align="center" style="width:250px;height:250px;">
+            </div>
+        </div>
+    </div>
+    <!--end-title and content-->
+
+    <!--footer-->
+    <div class="footer">
+        Copyright © 2022 BGMBBC.All Rights Reserved.
+      </div>
+</body>
+</html>

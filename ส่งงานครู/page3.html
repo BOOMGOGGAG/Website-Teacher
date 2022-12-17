@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <title>Item</title>
+    <style>
+        /* start Navigation Bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            justify-self: center;
+            background-color: rgb(61, 61, 61);
+        }
+        span {
+            display: block;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+            float: left;
+            font-size: large;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+            float: right;
+        }
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        /* end-Navigation Bar */
+
+        /*header*/
+        .title{
+            margin-top: -40px;
+            font-size: 100px;
+            text-shadow: 2px 2px 10px rgb(34, 34, 34);
+            font-family: arial,'sans-serif';
+            text-align: center;
+          }
+        .passage{
+            margin-top: -90px;
+            text-align: center;
+            font-size: 35px;
+            text-shadow: 2px 2px 10px rgb(34, 34, 34);
+        }
+        /*start-container*/
+        .container-1{
+            display: flex;
+            margin: 0px;
+            padding: 50px 20px 50px 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #008CBA;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .image1{
+            margin: 20px;
+        }
+        .image2{
+            margin: 20px;
+        }
+        .image3{
+            margin: 20px;
+        }
+        .image4{
+            margin: 20px;
+        }
+        .image5{
+            margin: 20px;
+        }
+        .image6{
+            margin: 20px;
+        }
+        .image7{
+            margin: 20px;
+        }
+        .container {
+            position: relative;
+          }
+          
+          .image {
+            display: block;
+            width: 400px;
+            height: 300px;
+          }
+          
+          .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+          }
+          
+          .container:hover .overlay {
+            width: 100%;
+          }
+          
+          .text {
+            white-space: nowrap; 
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+          }
+          h1{
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+          }
+        /*end-container*/
+
+        /*background*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            justify-content: center;
+            background-image: linear-gradient(to right, red , yellow);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /*footer*/
+        .footer {
+            background-color: rgb(29, 29, 29);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="bar">
+        <ul>
+          <span style="color: white;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BGMBBC</b></span>
+          <li><a href="About Us.html" target="_self">About Us</a></li>
+          <li><a href="https://www.finnomena.com/coinman/blockchain/" target="_blank">Blockchain คือ</a></li>
+          <li><a href="news.asp" target="_self">Patch</a></li>
+          <li><a href="index main.html" target="_self">Home</a></li>
+        </ul>
+    </div>
+    <!--/Navigation Bar-->
+
+    <!-- header -->
+    <div class="title">
+        <p>
+          <b style="color: rgb(255, 255, 255); font-family: 'ZCOOL QingKe HuangYou', cursive;">ITEM</b><br>
+        </p>
+    </div>
+    <div class="passage">
+        <p style="color: rgb(255, 255, 255); font-family: 'Kanit', sans-serif;">
+            <b>ตัวอย่าง item บางส่วน</b><br>
+        </p>
+      </div>
+    <!-- /header -->
+
+    <!-- container -->
+    <div class="container-1">
+        <div class="image1">
+            <div class="container">
+                <img src="image/1.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text" align="center">
+                     <h1>
+                        Fried  Chicken <br>
+                        <b style="font-family: 'Kanit', sans-serif;">ไก่ทอด</b>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image2">
+            <div class="container">
+                <img src="image/2.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text" align="center">
+                      <h1>
+                          Stick <br>
+                          <b style="font-family: 'Kanit', sans-serif;">กิ่งไม้</b>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image3">
+            <div class="container">
+                <img src="image/3.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text" align="center">
+                       <h1>
+                           Log <br>
+                           <b style="font-family: 'Kanit', sans-serif;">ท่อนไม้</b>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image4">
+            <div class="container">
+                <img src="image/4.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text" align="center">
+                       <h1>
+                           Steel Sword <br>
+                           <b style="font-family: 'Kanit', sans-serif;">ดาบเหล็ก</b>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image5">
+            <div class="container">
+                <img src="image/5.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text" align="center">
+                      <h1>
+                          Rock <br>
+                          <b style="font-family: 'Kanit', sans-serif;">หิน</b>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image6">
+            <div class="container">
+                <img src="image/6.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text" align="center">
+                     <h1>
+                         Fish <br>
+                         <b style="font-family: 'Kanit', sans-serif;">ปลา</b>
+                     </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image7">
+            <div class="container">
+                <img src="image/7.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text" align="center">
+                       <h1>
+                        Fried Egg with Rice <br>
+                        <b style="font-family: 'Kanit', sans-serif;">ข้าวไข่ดาว</b>
+                    </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <!--footer-->
+    <div class="footer">
+        Copyright © 2022 BGMBBC.All Rights Reserved.
+      </div>
+</body>
+</html>
